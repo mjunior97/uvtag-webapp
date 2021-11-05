@@ -1,0 +1,38 @@
+<div class="navbar">
+    <a href="/Logout">Logout</a>
+    <a href="/Perfil">Perfil</a>
+    <a href="/Selecionar">Monitor</a>
+    <h2>UV TAG - EVENTOS</h2>
+</div>
+
+<form action="/Eventos" method="POST">
+    <br><br><br>
+    <div align="center">
+        <label>Data de: </label>
+        <input class="button2" type="date" name="data_from">
+        <label>Data até: </label>
+        <input class="button2" type="date" name="data_to">
+        <button class="button2" type="submit">Pesquisar</button>
+    </div>
+</form>
+
+<br>
+<table class="tabler">
+    <tr>
+        <td>id</td>
+        <td>Controlador</td>
+        <td>Evento</td>
+        <td>Data</td>
+        <td>Hora</td>
+    </tr>
+
+    {{#each posts}}
+        <tr>
+            <td>{{dataValues.id}}</td>
+            <td>{{dataValues.controlador}}</td>
+            <td>{{dataValues.evento}}</td>
+            <td>{{dataValues.data}}</td>
+            <td>{{dataValues.hora}}</td>
+        </tr>
+    {{/each}}
+</table>

@@ -1,0 +1,50 @@
+<div class="navbar">
+    <a href="/Logout">Logout</a>
+    <a href="/Eventos">Eventos</a>
+    <a href="/Selecionar">Monitor</a>
+</div>
+
+<h2>UVTAG - PERFIL</h2>
+<form action="/Perfil" method="POST">
+    <br>
+    <div align="center">
+        <h4>Alterar email</h4>
+        <input class="input1" type="text" name="novo_email" placeholder='novo email'>
+        <input class="input1" type="text" name="confirmar_email" placeholder='confirmar email'>
+    </div>
+    <br>
+    <div align="center">
+        <h4>Alterar Senha</h4>
+        <input class="input1" type="password" name="nova_senha" placeholder="nova senha">
+        <input class="input1" type="password" name="confirmar_senha1" placeholder="confirmar senha">
+        <br>
+        <h4>Alterar Dispositivo/Controlador</h4>
+    </div>
+    <div align="center">
+        <label>Selecione:</label>
+        <select name="op_dispositivo" class="button2" align="center">
+            {{#each posts}}
+                <option placeholder="selecione dispositivo">{{dataValues.nome}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <br>
+    <div align="center">
+        <input class="input1" type="text" name="novo_dispositivo" placeholder="novo nome">
+        <input class="input1" type="text" name="confirmar_dispositivo" placeholder="confirmar novo nome">
+    </div>
+    <br>
+    <div align="center">
+        <h4>Cadastrar Dispositivo</h4>
+        <input class="input1" type="text" name="id_dispositivo" placeholder='ID'>
+        <input class="input1" type="text" name="nome_dispositivo" placeholder='nome'>
+    </div align="center">
+    <br>
+    <div align="center">
+        <h4>Digite a Senha Atual para confirmar as alterações:</h4>
+        <input class="input1" type="password" name="senha" placeholder='senha atual'>
+        <input class="input1" type="password" name="confirmar_senha2" placeholder='confirmar senha'>
+    </div>
+    <br>
+    <button class="button1" type="submit">Confirmar alterações</button>
+</form>

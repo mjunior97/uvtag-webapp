@@ -1,0 +1,20 @@
+<div class="navbar">
+    <a href="/Logout">Logout</a>
+    <a href="/Eventos">Eventos</a>
+    <a href="/Perfil">Perfil</a>
+    <h2>UV TAG - MONITOR</h2>
+</div>
+
+<form action="/Selecionar" method="POST">
+    <br><br><br>
+    <div align="center">
+        <label>Selecione o dispositivo:</label>
+        <select class = "button2" name = "dispositivo_nome">
+            <option>Todos</option>
+            {{#each posts}}
+                <option>{{dataValues.nome}}</option> 
+            {{/each}}
+        </select>
+        <button class="button2" type="submit">Selecionar</button>
+    </div>
+</form>

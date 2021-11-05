@@ -1,0 +1,153 @@
+a{color:#333;}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  margin-top: 15px;
+  margin-left: 15px;
+  text-align: left;
+  color: #ddd;
+  font-size: 20px;
+}
+
+/* Links inside the navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left: 0;
+    width: 100%; /* Full width */
+    margin-top: 5;
+    height: 50px;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: #333;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px;
+    margin-bottom: 30px; /* Add a top margin to avoid content overlay */
+  }
+
+.tabler{  
+    text-align: center;
+    border: 1px solid #333;
+    border-bottom: solid #333;
+    border-top: solid #333;
+    border-left: solid #333;
+    border-right: solid #333;
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0.5rem;
+    border-color: #333;
+    padding: 5px 5px;
+}
+.tabler td{
+  /*white-space: nowrap;*/
+  border-right: solid 1px gray;
+  border-left: solid 1px grey;
+  padding: 5px 5px;
+
+}
+.tabler tr{
+  border-spacing: 1px;
+  border-bottom-color: #333 ;
+  border-collapse: collapse;
+}
+.tabler tr:first-child{
+    background: #333; 
+    color: #ddd; 
+    font-weight: bold; 
+    padding: 15px 0;
+    white-space: nowrap;
+    border-spacing: 0.5rem
+  }
+
+.center{
+  margin: auto;
+  width: 50;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center-block-input {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 7px 5px;
+}
+
+.input1 {
+  padding: 7px 5px;
+}
+
+.button1{
+  margin-right: auto;
+  margin-left: auto;
+  padding: 7px 5px;
+  display: block;
+  color: #ddd;
+  background: #333;
+  text-align: center;
+}
+
+.button1:hover{
+  color: #333;
+  background: #ddd;
+}
+
+.button2{
+  padding: 7px 5px;
+  color: #ddd;
+  background: #333;
+  text-align: center;
+}
+
+.button2:hover{
+  color: #333;
+  background: #ddd;
+}
+
+.center-div{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  background-color: #333;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.copyright {
+  color: #ddd;
+  font-size: 15px;
+}
