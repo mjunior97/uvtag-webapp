@@ -288,11 +288,11 @@ app.post("/Monitor", function(req, res){
         data_de = new Date(ano, mes, 1, 0, 0, 0);
         data_ate = new Date(ano, mes, ultimo_dia, 23, 59, 59);
     } else{
-        data_de.setHours(data_de.getHours()+24)
+        //data_de.setHours(data_de.getHours()+24)
         data_de.setHours(0)
         data_de.setMinutes(0)
         data_de.setSeconds(0)
-        data_ate.setHours(data_ate.getHours()+24)
+        //data_ate.setHours(data_ate.getHours()+24)
         data_ate.setHours(23)
         data_ate.setMinutes(59)
         data_ate.setSeconds(59)
@@ -441,11 +441,11 @@ app.post("/Eventos", function(req, res){
         data_de = new Date(ano, mes, 1, 0, 0, 0);
         data_ate = new Date(ano, mes, ultimo_dia, 23, 59, 59);
     } else{
-        data_de.setHours(data_de.getHours()+24)
+        //data_de.setHours(data_de.getHours()+24)
         data_de.setHours(0)
         data_de.setMinutes(0)
         data_de.setSeconds(0)
-        data_ate.setHours(data_ate.getHours()+24)
+        //data_ate.setHours(data_ate.getHours()+24)
         data_ate.setHours(23)
         data_ate.setMinutes(59)
         data_ate.setSeconds(59)
@@ -653,7 +653,7 @@ app.post("/Perfil", function(req, res){
 // Função de callback
 // A chamada listen tem que ser a última do código
 
-app.listen(3000, function(){
+app.listen(3333, function(){
 
     console.log("Servidor rodando!")
 
